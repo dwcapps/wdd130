@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    
+    <div id="content">
+        <header>
+            <a class="logo_link" href="index.html">
+                <img class="logo" src="images/mylogo.png" alt="Portfolio Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+            </nav>
+        </header>
+
+        <main id="projects-main">
+            <section id="projects-intro">
+                <h1>Projects</h1>
+                <p>Here are some of what I consider to be my most impressive coding projects, If you have any questions about any of them, feel free to reach out!</p>
+            </section>
+            <section id="message-decoder">
+                <h2>Message Decoder/Encoder</h2>
+                <p>This is a project that I created as part of a job application. It is a web scraper designed to decode a message from a table of values, where the table has shuffled rows with 3 columns each, an X coordinate, a Y coordinate, and a unicode character. The decoder reads through the list, and prints out a complete grid, with every character in its correct spot according to the given coordinates. If the given input was valid, the final grid should spell out a word! I enjoyed this project so much that I reverse engineered an encoder to create these tables of values myself, just for fun.</p>
+                <img id="msg-output-img" src="images/unicodemessageoutputexample.png" alt="Example of decoder output">
+                <img id="msg-table-img" src="images/unicodemessagetable.png" alt="Example of encoded table">
+            </section>
+            <section id="goal-program">
+                <h2>CSE210 Goal Program</h2>
+                <p>This was the final project for CSE210, a class I took last semester. It is written in C#. The program is a “goal manager” which allows the user to gamify their goals by keeping track of a cumulative number of points. The user can set a number of points to be awarded for every chosen goal, and will be awarded those points when the goal is marked as completed. </p>
+                <img id="goal-program-img" src="images/goalprogram.png" alt="Goal program example">
+            </section>
+            <section id="godot-rpg">
+                <h2>Godot RPG</h2>
+                <p>This is a personal project that has been a WIP for a few months. It was my first foray into game development. It’s a simple 2d RPG developed in the GODOT game engine. As it was my first attempt at game dev, this was almost entirely created by following <a href="https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a" target="_blank">this youtube tutorial.</a></p>
+                <img id="rpg-img" src="images/godotrpg.jpg" alt="A screenshot of the Godot game engine, showing a 2d rpg.">
+            </section>
+        </main>
+
+        <footer>
+            <a class="logo_link" href="index.html">
+                <img class="logo" src="images/mylogo.png" alt="Portfolio Logo">
+            </a>
+            <p>&copy; 2024 Daniel Capps, All rights reserved</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="https://github.com/dwcapps" target="_blank">GitHub</a></p>
+            <a href="https://www.facebook.com/profile.php?id=100093296749884" target="_blank">
+                <img class="social-square" src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/dan__capps/" target="_blank">
+                <img class="social-square" src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </footer>
+    </div>
 </body>
+
 </html>
