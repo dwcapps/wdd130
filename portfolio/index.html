@@ -11,7 +11,7 @@
 <body>
     <div id="content">
         <header>
-            <a class="logo_link" href="index.html">
+            <a class="logo-link" href="index.html">
                 <img class="logo" src="images/mylogo.png" alt="Portfolio Logo">
             </a>
             <nav>
@@ -24,41 +24,45 @@
         <main id="home-main">
             <section id="headshot-intro">
                 <img id="headshot" src="images/headshot.jpg" alt="Headshot of Daniel Capps">
-                <h2>Hello!</h2>
-                <p>My name is Daniel, and I’m currently pursuing a degree in Software Engineering at BYU-Idaho, with a
-                    strong focus on developing practical skills in programming and software design. Through this
-                    portfolio, I aim to showcase some of the projects I’ve been working on, share a bit about my
-                    experience in tech, and just provide some foundational information about my personal life.</p>
+                <div>
+                    <h2>Hello!</h2>
+                    <p><br>My name is Daniel, and I’m currently pursuing a degree in Software Engineering at BYU-Idaho, with
+                        a strong focus on developing practical skills in programming and software design. <br><br> Through this
+                        portfolio, I aim to showcase some of the projects I’ve been working on, share a bit about my
+                        experience in tech, and just provide some basic information about my personal life.<br><br></p>
+                </div>
             </section>
             <section id="main-msg">
                 <img id="computer-stock" src="images/softwareengineerstockphoto.jpg" alt="Stock photo of a computer">
-                <p>I’m passionate about problem-solving and I work to continuously enhance my technical abilities. With
-                    experience in languages like Python, C#, and C++, I’m building a solid foundation that I’m eager to
-                    expand upon. Each project represents a new challenge and an opportunity to learn, and I’m committed
-                    to producing quality work that’s both efficient and effective.
-                    This site is designed to give you a glimpse into my background, my projects, and my goals as an
-                    aspiring software engineer. I invite you to explore and reach out if you’d like to connect or learn
-                    more!</p>
+                <div>
+                    <p>I’m passionate about problem-solving and I work to continuously enhance my technical abilities. With
+                        experience in languages like Python, C#, and C++, I’m building a solid foundation that I’m eager to
+                        expand upon. Each project represents a new challenge and an opportunity to learn, and I’m committed
+                        to producing quality work that’s both efficient and effective.
+                        This site is designed to give you a glimpse into my background, my projects, and my goals as an
+                        aspiring software engineer. I invite you to explore and reach out if you’d like to connect or learn
+                        more!</p>
+                </div>
             </section>
-            <section id="buttons">
-                <h1><a class="home-button" href="projects.html">Projects</a></h1>
-                <h1><a class="home-button" href="resume.html">Resume</a></h1>
-            </section>
+            <h1 id = "project-button" class = "button"><a class = "button-link" href="projects.html">Projects</a></h1>
+            <h1 id = "resume-button" class = "button"><a class = "button-link" href="resume.html">Resume</a></h1>
         </main>
 
         <footer>
-            <a class="logo_link" href="index.html">
+            <a class="logo-link" href="index.html">
                 <img class="logo" src="images/mylogo.png" alt="Portfolio Logo">
             </a>
-            <p>&copy; 2024 Daniel Capps, All rights reserved</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="https://github.com/dwcapps" target="_blank">GitHub</a></p>
-            <a href="https://www.facebook.com/profile.php?id=100093296749884" target="_blank">
-                <img class="social-square" src="images/facebook.png" alt="Facebook Icon">
-            </a>
-            <a href="https://www.instagram.com/dan__capps/" target="_blank">
-                <img class="social-square" src="images/instagram.png" alt="Instagram Icon">
-            </a>
+            <nav id="footer-nav">
+                <p id="copyright"><br><br><br>&copy; 2024 Daniel Capps. All rights reserved</p>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="https://github.com/dwcapps" target="_blank">GitHub</a>
+                <a class="social-link" href="https://www.facebook.com/profile.php?id=100093296749884" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook Icon">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/dan__capps/" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram Icon">
+                </a>
+            </nav>
         </footer>
     </div>
 </body>
