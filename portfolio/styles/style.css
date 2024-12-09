@@ -218,7 +218,7 @@ footer {
     background-color: transparent;
     width: 960px;
     height: 515px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 2000px; /* Remove this if you don't want the 3D effect */
   }
   
   /* This container is needed to position the front and back side */
@@ -243,17 +243,180 @@ footer {
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    border-radius: 15px;
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #CED0CE;
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #191919;
+    background-color: #CED0CE;
     color: #CED0CE;
     transform: rotateY(180deg);
   } 
+
+/* Projects Subpage CSS*/
+
+#projects-main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto min-content 10px min-content 10px 1fr;
+    margin-bottom: 50px;
+}
+
+#projects-intro {
+    text-align: center;
+    margin: 0;
+}
+#projects-intro h1 {
+    margin: 0;
+    font-size: 60px;
+}
+#projects-intro p {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#message-decoder {
+    grid-row: 2;
+    background-color: #191919;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto min-content min-content;
+    gap: 50px;
+    padding: 50px;
+}
+#message-decoder h2 {
+    grid-column: 1;
+    grid-row: 1;
+    color: #CED0CE;
+    font-size: 55px;
+    margin: 0;
+}
+#decoder-p-1 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #CED0CE;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 32px;
+    margin: 0;
+}
+#decoder-p-2 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: #CED0CE;
+    border-radius: 15px;
+    font-size: 32px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-self: start;
+    margin: 0;
+    height: 100%;
+}
+#msg-table-img {
+    grid-column: 1;
+    grid-row: 2/4;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+#msg-output-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
+    border-radius: 15px;
+    align-self: start;
+}
+
+#goal-program {
+    grid-row: 4;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    background-color: #650D1B;
+    color:#CED0CE;
+    border-radius: 15px;
+    gap: 50px;
+    padding: 50px;
+}
+#goal-program h2 {
+    grid-column: 1;
+    grid-row: 1;
+    color: #CED0CE;
+    font-size: 55px;
+    margin: 0;
+}
+#goal-program p {
+    color:#CED0CE;
+    background-color: #191919;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 32px;
+    margin: 0;
+}
+#goal-program-img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#godot-rpg {
+    grid-row: 6;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: auto auto;
+    background-color: #F15025;
+    color:#CED0CE;
+    border-radius: 15px;
+    gap: 50px;
+    padding: 50px;
+}
+#godot-rpg h2 {
+    grid-column: 1;
+    grid-row: 1;
+    color: #191919;
+    font-size: 55px;
+    margin: 0;
+}
+#godot-rpg p {
+    grid-row: 2/3;
+    color:#191919;
+    background-color: #CED0CE;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 32px;
+    margin: 0;
+    height: fit-content;
+}
+#godot-rpg p a{
+    color: #191919;
+}
+#godot-rpg p a:hover{
+    color: #F15025;
+}
+#godot-rpg .flip-card {
+    grid-row: 2/3;
+}
+#flip-card-image {
+    border-radius: 15px;
+}
+.flip-card-back {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.flip-card-back h3 {
+    color:#191919;
+    font-size: 55px;
+    margin: 0;
+}
+.flip-card-back p {
+    text-align: left;
+    margin: 0;
+}
